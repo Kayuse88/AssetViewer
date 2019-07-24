@@ -14,7 +14,7 @@ namespace RDA.Data {
     public ReplaceInput(XElement element) {
       var oldInput = new Description(element.Element("OldInput").Value);
       var newInput = new Description(element.Element("NewInput").Value);
-      this.Text = new Description($"{oldInput.EN} => {newInput.EN}", $"{oldInput.DE} => {newInput.DE}");
+      this.Text = new Description($"{oldInput.EN} => {newInput.EN}", $"{oldInput.DE} => {newInput.DE}", $"{oldInput.KR} => {newInput.KR}");
       this.Value = String.Empty;
     }
     #endregion

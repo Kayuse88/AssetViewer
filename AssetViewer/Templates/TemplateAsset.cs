@@ -87,15 +87,17 @@ namespace AssetViewer.Templates {
       this.ItemType = asset.Element("ItemType").Value;
       this.Allocation = asset.Element("Allocation").HasElements ? new Allocation(asset.Element("Allocation")) : null;
       this.EffectTargets = asset.Element("EffectTargets").Elements().Select(s => new EffectTarget(s)).ToList();
-      this.EffectTargetInfo = new Description("Affects ", "Beeinflusst ");
+      this.EffectTargetInfo = new Description("Affects ", "Beeinflusst ", "다음에 영향 ");
       this.ReleaseVersion = asset.Attribute("Release")?.Value;
       for (var i = 0; i < this.EffectTargets.Count; i++) {
         if (i > 0) {
           this.EffectTargetInfo.EN += ", ";
           this.EffectTargetInfo.DE += ", ";
+          this.EffectTargetInfo.KR += ", ";
         }
         this.EffectTargetInfo.EN += this.EffectTargets[i].Text.EN;
         this.EffectTargetInfo.DE += this.EffectTargets[i].Text.DE;
+        this.EffectTargetInfo.KR += this.EffectTargets[i].Text.KR;
       }
       this.HasEffectTargetInfo = this.EffectTargets.Count > 0;
       if (asset.Element("ItemSets") != null && asset.Element("ItemSets").HasElements) {

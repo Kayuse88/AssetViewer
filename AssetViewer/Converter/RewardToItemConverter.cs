@@ -20,6 +20,9 @@ namespace AssetViewer.Converter {
         if (App.Language == Languages.German) {
           return item.ID.GetItemsById().OrderBy(l => l.Text.DE);
         }
+        else if (App.Language == Languages.Korean) {
+          return item.ID.GetItemsById().OrderBy(l => l.Text.KR);
+        }
         else {
           return item.ID.GetItemsById().OrderBy(l => l.Text.EN);
         }
@@ -28,6 +31,9 @@ namespace AssetViewer.Converter {
         if (App.Language == Languages.German) {
           return rewards.SelectMany(l => l.ID.GetItemsById().OrderBy(k => k.Text.DE));
         }
+        else if (App.Language == Languages.Korean) {
+          return rewards.SelectMany(l => l.ID.GetItemsById().OrderBy(k => k.Text.KR));
+        }
         else {
           return rewards.SelectMany(l => l.ID.GetItemsById().OrderBy(k => k.Text.EN));
         }
@@ -35,6 +41,9 @@ namespace AssetViewer.Converter {
       else if (value is string pool) {
         if (App.Language == Languages.German) {
           return pool.GetItemsById().OrderBy(k => k.Text.DE);
+        }
+        else if (App.Language == Languages.Korean) {
+          return pool.GetItemsById().OrderBy(k => k.Text.KR);
         }
         else {
           return pool.GetItemsById().OrderBy(k => k.Text.EN);

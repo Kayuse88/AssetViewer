@@ -15,7 +15,8 @@ namespace RDA.Data {
     public ReplacingWorkforce(String id) {
       var en = "Instead of its usual workforce, the building employs";
       var de = "Statt der üblichen Arbeitskräfte beschäftigt das Gebäude";
-      this.Text = new Description($"{en} {Assets.DescriptionEN[id]}", $"{de} {Assets.DescriptionDE[id]}");
+      var kr = "고유 노동자가 아닌 일반적인 노동자를 건물이 고용";
+      this.Text = new Description($"{en} {Assets.DescriptionEN[id]}", $"{de} {Assets.DescriptionDE[id]}", $"{kr} {Assets.DescriptionKR[id]}");
       this.Value = String.Empty;
     }
     #endregion

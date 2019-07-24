@@ -71,6 +71,9 @@ namespace AssetViewer.Controls {
           case Languages.German:
             return "Hier ausgerüstet";
 
+          case Languages.Korean:
+            return "다음에 배치";
+
           default:
             return "Equipped in";
         }
@@ -82,6 +85,9 @@ namespace AssetViewer.Controls {
         switch (App.Language) {
           case Languages.German:
             return "Expeditions-Bonus";
+
+          case Languages.Korean:
+            return "탐험 보너스";
 
           default:
             return "Expedition Bonus";
@@ -95,6 +101,9 @@ namespace AssetViewer.Controls {
           case Languages.German:
             return "Verkaufspreis";
 
+          case Languages.Korean:
+            return "판매 가격";
+
           default:
             return "Selling Price";
         }
@@ -106,6 +115,9 @@ namespace AssetViewer.Controls {
         switch (App.Language) {
           case Languages.German:
             return "Teil eines Sets";
+
+          case Languages.Korean:
+            return "세트의 일부";
 
           default:
             return "Part of set";

@@ -24,39 +24,40 @@ namespace RDA {
       // Helper
       Helper.ExtractTextEnglish(Program.PathRoot + @"\Original\texts_english.xml");
       Helper.ExtractTextGerman(Program.PathRoot + @"\Original\texts_german.xml");
+      Helper.ExtractTextKorean(Program.PathRoot + @"\Original\texts_korean.xml");
       //Helper.ExtractTemplateNames(Program.PathRoot + @"\Original\assets.xml");
 
       // World Fair
       Monument.Create();
 
       // Assets
-      Program.ProcessingItems("ActiveItem");
-      Program.ProcessingItems("ItemSpecialActionVisualEffect");
-      Program.ProcessingItems("ItemSpecialAction");
-      Program.ProcessingItems("GuildhouseItem");
-      Program.ProcessingItems("TownhallItem");
-      Program.ProcessingItems("HarborOfficeItem");
-      Program.ProcessingItems("VehicleItem");
-      Program.ProcessingItems("ShipSpecialist");
-      Program.ProcessingItems("CultureItem");
-      Program.ProcessingItems("BuildPermitBuilding");
-      Program.ProcessingItems("Product");
+      //Program.ProcessingItems("ActiveItem");
+      //Program.ProcessingItems("ItemSpecialActionVisualEffect");
+      //Program.ProcessingItems("ItemSpecialAction");
+      //Program.ProcessingItems("GuildhouseItem");
+      //Program.ProcessingItems("TownhallItem");
+      //Program.ProcessingItems("HarborOfficeItem");
+      //Program.ProcessingItems("VehicleItem");
+      //Program.ProcessingItems("ShipSpecialist");
+      //Program.ProcessingItems("CultureItem");
+      //Program.ProcessingItems("BuildPermitBuilding");
+      //Program.ProcessingItems("Product");
 
-      Program.ProcessingRewardPools();
+      //Program.ProcessingRewardPools();
 
       //Third Party
-      Program.ProcessingThirdParty();
+      //Program.ProcessingThirdParty();
 
       // Quests
       //Program.QuestGiver();
       //Program.Quests();
 
       // Expeditions
-      //Program.Expeditions();
+      Program.Expeditions();
       Program.ProcessingExpeditionEvents();
 
       ////Tourism
-      Program.ProcessingTourism();
+      //Program.ProcessingTourism();
     }
 
     #endregion Methods
@@ -66,6 +67,7 @@ namespace RDA {
     internal static String PathRoot;
     internal static String PathViewer;
     internal static XDocument TextDE;
+    internal static XDocument TextKR;
     private static readonly Dictionary<Int32, String> Descriptions = new Dictionary<Int32, String>();
 
     #endregion Fields
@@ -340,7 +342,10 @@ namespace RDA {
         var id = pool.Element("CityStatus").Value;
         var xStatus = new XElement("Status");
         xRoot.Add(xStatus);
-        var desc = new Description((Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0") + " Attractiveness", (Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0") + " Attraktivität");
+        var desc = new Description(
+          (Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0") + " Attractiveness",
+          (Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0") + " Attraktivität",
+          (Assets.TourismStati[id].Element("AttractivenessThreshold")?.Value ?? "0") + " 매력도");
         xStatus.Add(new XAttribute("Pool", pool.Element("Pool").Value));
         xStatus.Add(desc.ToXml("Requirement"));
         xStatus.Add(new Description(Assets.TourismStati[id].Element("CityStatusFluff").Value).ToXml("Text"));

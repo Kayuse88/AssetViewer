@@ -29,6 +29,8 @@ namespace AssetViewer.Data {
         switch (App.Language) {
           case Languages.German:
             return "Hier ausgerüstet";
+          case Languages.Korean:
+            return "이곳에 배치됨";
           default:
             return "Equipped here";
         }
@@ -46,6 +48,15 @@ namespace AssetViewer.Data {
                 return "Museum";
               default:
                 return "Handelskammer";
+            }
+          case Languages.Korean:
+            switch (allocation) {
+              case "HarborOffice":
+                return "항만 관리소장실";
+              case "Museum":
+                return "박물관";
+              default:
+                return "무역 연합";
             }
           default:
             switch (allocation) {

@@ -1,75 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuildPermitBuilding>
-  <Asset ID="102474" Release="Release">
-    <Name>culture_4x3_pavillion</Name>
-    <Text ID="102474">
-      <EN>World's Fair Pavillion</EN>
-      <DE>Weltausstellungspavillon</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_module_01.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity />
-    <ItemType />
-    <ItemSets />
-    <Allocation />
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice />
-    <Info ID="17742">
-      <EN>A magnificent addendum to your monument.</EN>
-      <DE>Eine prächtige Ergänzung für Ihr Monument.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="17709">
-        <Name>9 World Fair Annexe</Name>
-        <Text ID="17709">
-          <EN>World's Fair Annexe</EN>
-          <DE>Weltausstellungsanbau</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17709">
-            <EN>World's Fair Annexe</EN>
-            <DE>Weltausstellungsanbau</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
   <Asset ID="102463" Release="Release">
     <Name>culture_1x1_columnsangle</Name>
     <Text ID="102463">
       <EN>Columns</EN>
       <DE>Säulen</DE>
+      <KR>석주</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_02.png</Filename>
       </Icon>
@@ -103,6 +39,7 @@
     <Info ID="17743">
       <EN>There's a real sense of enormity about them.</EN>
       <DE>Ein Gefühl der Unermesslichkeit geht damit einher.</DE>
+      <KR>언제나 광대함이 느껴집니다.</KR>
       <Icon />
     </Info>
     <Sources>
@@ -111,6 +48,7 @@
         <Text ID="17704">
           <EN>Esplanade Design</EN>
           <DE>Promenaden-Designs</DE>
+          <KR>산책로 설계</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Filename>
           </Icon>
@@ -119,6 +57,7 @@
           <Text ID="17704">
             <EN>Esplanade Design</EN>
             <DE>Promenaden-Designs</DE>
+            <KR>산책로 설계</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Filename>
             </Icon>
@@ -135,6 +74,7 @@
     <Text ID="102471">
       <EN>Channel</EN>
       <DE>Kanal</DE>
+      <KR>수로</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_10.png</Filename>
       </Icon>
@@ -168,6 +108,7 @@
     <Info ID="17737">
       <EN>Elegant and serene.</EN>
       <DE>Elegant und ruhig.</DE>
+      <KR>아름답고 평화롭습니다.</KR>
       <Icon />
     </Info>
     <Sources>
@@ -176,6 +117,7 @@
         <Text ID="17708">
           <EN>Marine Promenade</EN>
           <DE>Hafenpromenade</DE>
+          <KR>해양 산책로</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
           </Icon>
@@ -184,6 +126,7 @@
           <Text ID="17708">
             <EN>Marine Promenade</EN>
             <DE>Hafenpromenade</DE>
+            <KR>해양 산책로</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
             </Icon>
@@ -195,6 +138,7 @@
         <Text ID="17705">
           <EN>Fountain Architecture</EN>
           <DE>Brunnenkonstruktionen</DE>
+          <KR>분수 건축학</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Filename>
           </Icon>
@@ -203,298 +147,9 @@
           <Text ID="17705">
             <EN>Fountain Architecture</EN>
             <DE>Brunnenkonstruktionen</DE>
+            <KR>분수 건축학</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="102475" Release="Release">
-    <Name>culture_2x2_tower</Name>
-    <Text ID="102475">
-      <EN>World's Fair Tower</EN>
-      <DE>Weltausstellungsturm</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_tower_01.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity />
-    <ItemType />
-    <ItemSets />
-    <Allocation />
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice />
-    <Info ID="17740">
-      <EN>A modern architectural landmark to accompany the finest events.</EN>
-      <DE>Ein modernes architektonisches Wahrzeichen für die erlesensten Veranstaltungen.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="17707">
-        <Name>7 Refined Architecture</Name>
-        <Text ID="17707">
-          <EN>Refined Architecture</EN>
-          <DE>Kultivierte Architektur</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17707">
-            <EN>Refined Architecture</EN>
-            <DE>Kultivierte Architektur</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17709">
-        <Name>9 World Fair Annexe</Name>
-        <Text ID="17709">
-          <EN>World's Fair Annexe</EN>
-          <DE>Weltausstellungsanbau</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17709">
-            <EN>World's Fair Annexe</EN>
-            <DE>Weltausstellungsanbau</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="102467" Release="Release">
-    <Name>culture_1x1_flag</Name>
-    <Text ID="102467">
-      <EN>Flagpole</EN>
-      <DE>Flaggenmast</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_06.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity />
-    <ItemType />
-    <ItemSets />
-    <Allocation />
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice />
-    <Info ID="17736">
-      <EN>It flaps gracefully in the coastal breeze.</EN>
-      <DE>Flattert würdevoll in der Meeresbrise.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="17700">
-        <Name>2 City Furnitures</Name>
-        <Text ID="17700">
-          <EN>City Furniture</EN>
-          <DE>Stadtverschönerungen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17700">
-            <EN>City Furniture</EN>
-            <DE>Stadtverschönerungen</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17703">
-        <Name>3 Plaza Design</Name>
-        <Text ID="17703">
-          <EN>Plaza Design</EN>
-          <DE>Plaza-Designs</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17703">
-            <EN>Plaza Design</EN>
-            <DE>Plaza-Designs</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17015">
-        <Name>1 City Signage</Name>
-        <Text ID="17015">
-          <EN>City Signage</EN>
-          <DE>Stadtbeschilderung</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17015">
-            <EN>City Signage</EN>
-            <DE>Stadtbeschilderung</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="102464" Release="Release">
-    <Name>culture_1x1_advertisingcolumn</Name>
-    <Text ID="102464">
-      <EN>Morris Column</EN>
-      <DE>Litfaßsäule</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_03.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity />
-    <ItemType />
-    <ItemSets />
-    <Allocation />
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice />
-    <Info ID="17734">
-      <EN>It grows with every poster added.</EN>
-      <DE>Mit jeder Plakatschicht wird sie dicker.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="17015">
-        <Name>1 City Signage</Name>
-        <Text ID="17015">
-          <EN>City Signage</EN>
-          <DE>Stadtbeschilderung</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17015">
-            <EN>City Signage</EN>
-            <DE>Stadtbeschilderung</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17700">
-        <Name>2 City Furnitures</Name>
-        <Text ID="17700">
-          <EN>City Furniture</EN>
-          <DE>Stadtverschönerungen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17700">
-            <EN>City Furniture</EN>
-            <DE>Stadtverschönerungen</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17703">
-        <Name>3 Plaza Design</Name>
-        <Text ID="17703">
-          <EN>Plaza Design</EN>
-          <DE>Plaza-Designs</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17703">
-            <EN>Plaza Design</EN>
-            <DE>Plaza-Designs</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
             </Icon>
           </Text>
         </Details>
@@ -509,6 +164,7 @@
     <Text ID="102461">
       <EN>Columns</EN>
       <DE>Säulen</DE>
+      <KR>석주</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_01.png</Filename>
       </Icon>
@@ -542,6 +198,7 @@
     <Info ID="17743">
       <EN>There's a real sense of enormity about them.</EN>
       <DE>Ein Gefühl der Unermesslichkeit geht damit einher.</DE>
+      <KR>언제나 광대함이 느껴집니다.</KR>
       <Icon />
     </Info>
     <Sources>
@@ -550,6 +207,7 @@
         <Text ID="17704">
           <EN>Esplanade Design</EN>
           <DE>Promenaden-Designs</DE>
+          <KR>산책로 설계</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Filename>
           </Icon>
@@ -558,6 +216,7 @@
           <Text ID="17704">
             <EN>Esplanade Design</EN>
             <DE>Promenaden-Designs</DE>
+            <KR>산책로 설계</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Filename>
             </Icon>
@@ -569,6 +228,7 @@
         <Text ID="17706">
           <EN>Antique Landscaping</EN>
           <DE>Antike Landschaftsgestaltung</DE>
+          <KR>옛날식 조경</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
           </Icon>
@@ -577,6 +237,7 @@
           <Text ID="17706">
             <EN>Antique Landscaping</EN>
             <DE>Antike Landschaftsgestaltung</DE>
+            <KR>옛날식 조경</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
             </Icon>
@@ -588,6 +249,7 @@
         <Text ID="17707">
           <EN>Refined Architecture</EN>
           <DE>Kultivierte Architektur</DE>
+          <KR>세련된 건축물</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
           </Icon>
@@ -596,279 +258,9 @@
           <Text ID="17707">
             <EN>Refined Architecture</EN>
             <DE>Kultivierte Architektur</DE>
+            <KR>세련된 건축물</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="102465" Release="Release">
-    <Name>culture_1x1_advertisingpanel</Name>
-    <Text ID="102465">
-      <EN>Billboard</EN>
-      <DE>Plakatwand</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_04.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity />
-    <ItemType />
-    <ItemSets />
-    <Allocation />
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice />
-    <Info ID="17735">
-      <EN>The best place to keep up with the latest theatrical productions.</EN>
-      <DE>Der beste Ort, um sich über die neuesten Theaterproduktionen auf dem Laufenden zu halten.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="17700">
-        <Name>2 City Furnitures</Name>
-        <Text ID="17700">
-          <EN>City Furniture</EN>
-          <DE>Stadtverschönerungen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17700">
-            <EN>City Furniture</EN>
-            <DE>Stadtverschönerungen</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17703">
-        <Name>3 Plaza Design</Name>
-        <Text ID="17703">
-          <EN>Plaza Design</EN>
-          <DE>Plaza-Designs</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17703">
-            <EN>Plaza Design</EN>
-            <DE>Plaza-Designs</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17015">
-        <Name>1 City Signage</Name>
-        <Text ID="17015">
-          <EN>City Signage</EN>
-          <DE>Stadtbeschilderung</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17015">
-            <EN>City Signage</EN>
-            <DE>Stadtbeschilderung</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="102469" Release="Release">
-    <Name>culture_1x1_basinbridge</Name>
-    <Text ID="102469">
-      <EN>Channel Bridge</EN>
-      <DE>Kanalbrücke</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_08.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity />
-    <ItemType />
-    <ItemSets />
-    <Allocation />
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice />
-    <Info ID="17739">
-      <EN>What could be more romantic than contemplating your reflections together?</EN>
-      <DE>Was könnte romantischer sein, als gemeinsam sein Spiegelbild zu betrachten?</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="17708">
-        <Name>8 Aquatic Promenade</Name>
-        <Text ID="17708">
-          <EN>Marine Promenade</EN>
-          <DE>Hafenpromenade</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17708">
-            <EN>Marine Promenade</EN>
-            <DE>Hafenpromenade</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-    </Sources>
-    <MonumentEvents />
-    <MonumentThresholds />
-    <MonumentRewards />
-  </Asset>
-  <Asset ID="102472" Release="Release">
-    <Name>culture_1x1_basinstraight</Name>
-    <Text ID="102472">
-      <EN>Channel</EN>
-      <DE>Kanal</DE>
-      <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_11.png</Filename>
-      </Icon>
-    </Text>
-    <Rarity />
-    <ItemType />
-    <ItemSets />
-    <Allocation />
-    <EffectTargets />
-    <FactoryUpgrades />
-    <BuildingUpgrades />
-    <CultureUpgrades />
-    <ModuleOwnerUpgrades />
-    <ResidenceUpgrades />
-    <PopulationUpgrades />
-    <ElectricUpgrades />
-    <ExpeditionAttributes />
-    <AttackableUpgrades />
-    <TradeShipUpgrades />
-    <VehicleUpgrades />
-    <AttackerUpgrades />
-    <VisitorHarborUpgrades />
-    <RepairCraneUpgrades />
-    <IncidentInfectableUpgrades />
-    <IncidentInfluencerUpgrades />
-    <ItemGeneratorUpgrades />
-    <ItemActionUpgrades />
-    <ShipyardUpgrades />
-    <KontorUpgrades />
-    <TradePrice />
-    <Info ID="17737">
-      <EN>Elegant and serene.</EN>
-      <DE>Elegant und ruhig.</DE>
-      <Icon />
-    </Info>
-    <Sources>
-      <Source ID="17705">
-        <Name>5 Fountain Architecture</Name>
-        <Text ID="17705">
-          <EN>Fountain Architecture</EN>
-          <DE>Brunnenkonstruktionen</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17705">
-            <EN>Fountain Architecture</EN>
-            <DE>Brunnenkonstruktionen</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17706">
-        <Name>6 Antiquity Landscaping</Name>
-        <Text ID="17706">
-          <EN>Antique Landscaping</EN>
-          <DE>Antike Landschaftsgestaltung</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17706">
-            <EN>Antique Landscaping</EN>
-            <DE>Antike Landschaftsgestaltung</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
-            </Icon>
-          </Text>
-        </Details>
-      </Source>
-      <Source ID="17708">
-        <Name>8 Aquatic Promenade</Name>
-        <Text ID="17708">
-          <EN>Marine Promenade</EN>
-          <DE>Hafenpromenade</DE>
-          <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
-          </Icon>
-        </Text>
-        <Details>
-          <Text ID="17708">
-            <EN>Marine Promenade</EN>
-            <DE>Hafenpromenade</DE>
-            <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
             </Icon>
           </Text>
         </Details>
@@ -883,6 +275,7 @@
     <Text ID="102473">
       <EN>World's Fair Gate</EN>
       <DE>Weltausstellungstor</DE>
+      <KR>만국박람회 정문</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_gate_01.png</Filename>
       </Icon>
@@ -916,6 +309,7 @@
     <Info ID="17741">
       <EN>The most impressive entrance to the World Fair.</EN>
       <DE>Der eindrucksvollste Eingang zur Weltausstellung.</DE>
+      <KR>매우 인상적인 만국박람회 입구입니다.</KR>
       <Icon />
     </Info>
     <Sources>
@@ -924,6 +318,7 @@
         <Text ID="17707">
           <EN>Refined Architecture</EN>
           <DE>Kultivierte Architektur</DE>
+          <KR>세련된 건축물</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
           </Icon>
@@ -932,6 +327,7 @@
           <Text ID="17707">
             <EN>Refined Architecture</EN>
             <DE>Kultivierte Architektur</DE>
+            <KR>세련된 건축물</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
             </Icon>
@@ -943,6 +339,7 @@
         <Text ID="17709">
           <EN>World's Fair Annexe</EN>
           <DE>Weltausstellungsanbau</DE>
+          <KR>만국박람회 부속 건물</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
           </Icon>
@@ -951,8 +348,432 @@
           <Text ID="17709">
             <EN>World's Fair Annexe</EN>
             <DE>Weltausstellungsanbau</DE>
+            <KR>만국박람회 부속 건물</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="102475" Release="Release">
+    <Name>culture_2x2_tower</Name>
+    <Text ID="102475">
+      <EN>World's Fair Tower</EN>
+      <DE>Weltausstellungsturm</DE>
+      <KR>만국박람회 타워</KR>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_tower_01.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity />
+    <ItemType />
+    <ItemSets />
+    <Allocation />
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice />
+    <Info ID="17740">
+      <EN>A modern architectural landmark to accompany the finest events.</EN>
+      <DE>Ein modernes architektonisches Wahrzeichen für die erlesensten Veranstaltungen.</DE>
+      <KR>현대적인 건축 양식을 자랑하는 멋진 행사가 열리는 명소입니다.</KR>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="17707">
+        <Name>7 Refined Architecture</Name>
+        <Text ID="17707">
+          <EN>Refined Architecture</EN>
+          <DE>Kultivierte Architektur</DE>
+          <KR>세련된 건축물</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17707">
+            <EN>Refined Architecture</EN>
+            <DE>Kultivierte Architektur</DE>
+            <KR>세련된 건축물</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_7.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17709">
+        <Name>9 World Fair Annexe</Name>
+        <Text ID="17709">
+          <EN>World's Fair Annexe</EN>
+          <DE>Weltausstellungsanbau</DE>
+          <KR>만국박람회 부속 건물</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17709">
+            <EN>World's Fair Annexe</EN>
+            <DE>Weltausstellungsanbau</DE>
+            <KR>만국박람회 부속 건물</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="102467" Release="Release">
+    <Name>culture_1x1_flag</Name>
+    <Text ID="102467">
+      <EN>Flagpole</EN>
+      <DE>Flaggenmast</DE>
+      <KR>깃대</KR>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_06.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity />
+    <ItemType />
+    <ItemSets />
+    <Allocation />
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice />
+    <Info ID="17736">
+      <EN>It flaps gracefully in the coastal breeze.</EN>
+      <DE>Flattert würdevoll in der Meeresbrise.</DE>
+      <KR>깃발이 바닷바람에 부드럽게 흔들립니다.</KR>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="17700">
+        <Name>2 City Furnitures</Name>
+        <Text ID="17700">
+          <EN>City Furniture</EN>
+          <DE>Stadtverschönerungen</DE>
+          <KR>도시 비품</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17700">
+            <EN>City Furniture</EN>
+            <DE>Stadtverschönerungen</DE>
+            <KR>도시 비품</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17703">
+        <Name>3 Plaza Design</Name>
+        <Text ID="17703">
+          <EN>Plaza Design</EN>
+          <DE>Plaza-Designs</DE>
+          <KR>플라자 설계</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17703">
+            <EN>Plaza Design</EN>
+            <DE>Plaza-Designs</DE>
+            <KR>플라자 설계</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17015">
+        <Name>1 City Signage</Name>
+        <Text ID="17015">
+          <EN>City Signage</EN>
+          <DE>Stadtbeschilderung</DE>
+          <KR>도시 표지판</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17015">
+            <EN>City Signage</EN>
+            <DE>Stadtbeschilderung</DE>
+            <KR>도시 표지판</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="102464" Release="Release">
+    <Name>culture_1x1_advertisingcolumn</Name>
+    <Text ID="102464">
+      <EN>Morris Column</EN>
+      <DE>Litfaßsäule</DE>
+      <KR>모리스 석주</KR>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_03.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity />
+    <ItemType />
+    <ItemSets />
+    <Allocation />
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice />
+    <Info ID="17734">
+      <EN>It grows with every poster added.</EN>
+      <DE>Mit jeder Plakatschicht wird sie dicker.</DE>
+      <KR>포스터를 벗겨낼 때마다 더 많은 포스터가 나옵니다.</KR>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="17015">
+        <Name>1 City Signage</Name>
+        <Text ID="17015">
+          <EN>City Signage</EN>
+          <DE>Stadtbeschilderung</DE>
+          <KR>도시 표지판</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17015">
+            <EN>City Signage</EN>
+            <DE>Stadtbeschilderung</DE>
+            <KR>도시 표지판</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17700">
+        <Name>2 City Furnitures</Name>
+        <Text ID="17700">
+          <EN>City Furniture</EN>
+          <DE>Stadtverschönerungen</DE>
+          <KR>도시 비품</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17700">
+            <EN>City Furniture</EN>
+            <DE>Stadtverschönerungen</DE>
+            <KR>도시 비품</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17703">
+        <Name>3 Plaza Design</Name>
+        <Text ID="17703">
+          <EN>Plaza Design</EN>
+          <DE>Plaza-Designs</DE>
+          <KR>플라자 설계</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17703">
+            <EN>Plaza Design</EN>
+            <DE>Plaza-Designs</DE>
+            <KR>플라자 설계</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="102465" Release="Release">
+    <Name>culture_1x1_advertisingpanel</Name>
+    <Text ID="102465">
+      <EN>Billboard</EN>
+      <DE>Plakatwand</DE>
+      <KR>광고판</KR>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_04.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity />
+    <ItemType />
+    <ItemSets />
+    <Allocation />
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice />
+    <Info ID="17735">
+      <EN>The best place to keep up with the latest theatrical productions.</EN>
+      <DE>Der beste Ort, um sich über die neuesten Theaterproduktionen auf dem Laufenden zu halten.</DE>
+      <KR>최신 연극 작품을 확인할 수 있는 최고의 장소입니다.</KR>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="17700">
+        <Name>2 City Furnitures</Name>
+        <Text ID="17700">
+          <EN>City Furniture</EN>
+          <DE>Stadtverschönerungen</DE>
+          <KR>도시 비품</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17700">
+            <EN>City Furniture</EN>
+            <DE>Stadtverschönerungen</DE>
+            <KR>도시 비품</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17703">
+        <Name>3 Plaza Design</Name>
+        <Text ID="17703">
+          <EN>Plaza Design</EN>
+          <DE>Plaza-Designs</DE>
+          <KR>플라자 설계</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17703">
+            <EN>Plaza Design</EN>
+            <DE>Plaza-Designs</DE>
+            <KR>플라자 설계</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17015">
+        <Name>1 City Signage</Name>
+        <Text ID="17015">
+          <EN>City Signage</EN>
+          <DE>Stadtbeschilderung</DE>
+          <KR>도시 표지판</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17015">
+            <EN>City Signage</EN>
+            <DE>Stadtbeschilderung</DE>
+            <KR>도시 표지판</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_1.png</Filename>
             </Icon>
           </Text>
         </Details>
@@ -967,6 +788,7 @@
     <Text ID="102468">
       <EN>Channel Fountain</EN>
       <DE>Kanalbrunnen</DE>
+      <KR>수로 분수</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_07.png</Filename>
       </Icon>
@@ -1000,6 +822,7 @@
     <Info ID="17738">
       <EN>There's no heart that can't be appeased by the sound of the gentle lap of water.</EN>
       <DE>Es gibt kein Herz, das nicht durch die beruhigenden Geräusche des Wassers besänftigt werden könnte.</DE>
+      <KR>부드러운 물소리가 모든 사람의 마음을 달랩니다.</KR>
       <Icon />
     </Info>
     <Sources>
@@ -1008,6 +831,7 @@
         <Text ID="17708">
           <EN>Marine Promenade</EN>
           <DE>Hafenpromenade</DE>
+          <KR>해양 산책로</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
           </Icon>
@@ -1016,6 +840,7 @@
           <Text ID="17708">
             <EN>Marine Promenade</EN>
             <DE>Hafenpromenade</DE>
+            <KR>해양 산책로</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
             </Icon>
@@ -1027,13 +852,14 @@
     <MonumentThresholds />
     <MonumentRewards />
   </Asset>
-  <Asset ID="102466" Release="Release">
-    <Name>culture_1x1_secondground</Name>
-    <Text ID="102466">
-      <EN>Mosaic Paving</EN>
-      <DE>Mosaikpflaster</DE>
+  <Asset ID="102469" Release="Release">
+    <Name>culture_1x1_basinbridge</Name>
+    <Text ID="102469">
+      <EN>Channel Bridge</EN>
+      <DE>Kanalbrücke</DE>
+      <KR>수로 다리</KR>
       <Icon>
-        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Filename>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_08.png</Filename>
       </Icon>
     </Text>
     <Rarity />
@@ -1062,65 +888,210 @@
     <ShipyardUpgrades />
     <KontorUpgrades />
     <TradePrice />
-    <Info ID="17731">
-      <EN>Step on art.</EN>
-      <DE>Kunst zum drauftreten.</DE>
+    <Info ID="17739">
+      <EN>What could be more romantic than contemplating your reflections together?</EN>
+      <DE>Was könnte romantischer sein, als gemeinsam sein Spiegelbild zu betrachten?</DE>
+      <KR>물에 비친 모습을 함께 들여다보는 것보다 더 낭만적인 일이 있을까요?</KR>
       <Icon />
     </Info>
     <Sources>
-      <Source ID="17700">
-        <Name>2 City Furnitures</Name>
-        <Text ID="17700">
-          <EN>City Furniture</EN>
-          <DE>Stadtverschönerungen</DE>
+      <Source ID="17708">
+        <Name>8 Aquatic Promenade</Name>
+        <Text ID="17708">
+          <EN>Marine Promenade</EN>
+          <DE>Hafenpromenade</DE>
+          <KR>해양 산책로</KR>
           <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="17700">
-            <EN>City Furniture</EN>
-            <DE>Stadtverschönerungen</DE>
+          <Text ID="17708">
+            <EN>Marine Promenade</EN>
+            <DE>Hafenpromenade</DE>
+            <KR>해양 산책로</KR>
             <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
             </Icon>
           </Text>
         </Details>
       </Source>
-      <Source ID="17703">
-        <Name>3 Plaza Design</Name>
-        <Text ID="17703">
-          <EN>Plaza Design</EN>
-          <DE>Plaza-Designs</DE>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="102474" Release="Release">
+    <Name>culture_4x3_pavillion</Name>
+    <Text ID="102474">
+      <EN>World's Fair Pavillion</EN>
+      <DE>Weltausstellungspavillon</DE>
+      <KR>만국박람회 파빌리온</KR>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_module_01.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity />
+    <ItemType />
+    <ItemSets />
+    <Allocation />
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice />
+    <Info ID="17742">
+      <EN>A magnificent addendum to your monument.</EN>
+      <DE>Eine prächtige Ergänzung für Ihr Monument.</DE>
+      <KR>기념물에 웅장함을 더합니다.</KR>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="17709">
+        <Name>9 World Fair Annexe</Name>
+        <Text ID="17709">
+          <EN>World's Fair Annexe</EN>
+          <DE>Weltausstellungsanbau</DE>
+          <KR>만국박람회 부속 건물</KR>
           <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="17703">
-            <EN>Plaza Design</EN>
-            <DE>Plaza-Designs</DE>
+          <Text ID="17709">
+            <EN>World's Fair Annexe</EN>
+            <DE>Weltausstellungsanbau</DE>
+            <KR>만국박람회 부속 건물</KR>
             <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_9.png</Filename>
             </Icon>
           </Text>
         </Details>
       </Source>
-      <Source ID="17704">
-        <Name>4 Esplanade Design</Name>
-        <Text ID="17704">
-          <EN>Esplanade Design</EN>
-          <DE>Promenaden-Designs</DE>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="102472" Release="Release">
+    <Name>culture_1x1_basinstraight</Name>
+    <Text ID="102472">
+      <EN>Channel</EN>
+      <DE>Kanal</DE>
+      <KR>수로</KR>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_11.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity />
+    <ItemType />
+    <ItemSets />
+    <Allocation />
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice />
+    <Info ID="17737">
+      <EN>Elegant and serene.</EN>
+      <DE>Elegant und ruhig.</DE>
+      <KR>아름답고 평화롭습니다.</KR>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="17705">
+        <Name>5 Fountain Architecture</Name>
+        <Text ID="17705">
+          <EN>Fountain Architecture</EN>
+          <DE>Brunnenkonstruktionen</DE>
+          <KR>분수 건축학</KR>
           <Icon>
-            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Filename>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Filename>
           </Icon>
         </Text>
         <Details>
-          <Text ID="17704">
-            <EN>Esplanade Design</EN>
-            <DE>Promenaden-Designs</DE>
+          <Text ID="17705">
+            <EN>Fountain Architecture</EN>
+            <DE>Brunnenkonstruktionen</DE>
+            <KR>분수 건축학</KR>
             <Icon>
-              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Filename>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17706">
+        <Name>6 Antiquity Landscaping</Name>
+        <Text ID="17706">
+          <EN>Antique Landscaping</EN>
+          <DE>Antike Landschaftsgestaltung</DE>
+          <KR>옛날식 조경</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17706">
+            <EN>Antique Landscaping</EN>
+            <DE>Antike Landschaftsgestaltung</DE>
+            <KR>옛날식 조경</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17708">
+        <Name>8 Aquatic Promenade</Name>
+        <Text ID="17708">
+          <EN>Marine Promenade</EN>
+          <DE>Hafenpromenade</DE>
+          <KR>해양 산책로</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17708">
+            <EN>Marine Promenade</EN>
+            <DE>Hafenpromenade</DE>
+            <KR>해양 산책로</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
             </Icon>
           </Text>
         </Details>
@@ -1135,6 +1106,7 @@
     <Text ID="102470">
       <EN>Channel</EN>
       <DE>Kanal</DE>
+      <KR>수로</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_09.png</Filename>
       </Icon>
@@ -1168,6 +1140,7 @@
     <Info ID="17737">
       <EN>Elegant and serene.</EN>
       <DE>Elegant und ruhig.</DE>
+      <KR>아름답고 평화롭습니다.</KR>
       <Icon />
     </Info>
     <Sources>
@@ -1176,6 +1149,7 @@
         <Text ID="17708">
           <EN>Marine Promenade</EN>
           <DE>Hafenpromenade</DE>
+          <KR>해양 산책로</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
           </Icon>
@@ -1184,6 +1158,7 @@
           <Text ID="17708">
             <EN>Marine Promenade</EN>
             <DE>Hafenpromenade</DE>
+            <KR>해양 산책로</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_8.png</Filename>
             </Icon>
@@ -1195,6 +1170,7 @@
         <Text ID="17705">
           <EN>Fountain Architecture</EN>
           <DE>Brunnenkonstruktionen</DE>
+          <KR>분수 건축학</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Filename>
           </Icon>
@@ -1203,6 +1179,7 @@
           <Text ID="17705">
             <EN>Fountain Architecture</EN>
             <DE>Brunnenkonstruktionen</DE>
+            <KR>분수 건축학</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_5.png</Filename>
             </Icon>
@@ -1214,6 +1191,7 @@
         <Text ID="17706">
           <EN>Antique Landscaping</EN>
           <DE>Antike Landschaftsgestaltung</DE>
+          <KR>옛날식 조경</KR>
           <Icon>
             <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
           </Icon>
@@ -1222,8 +1200,120 @@
           <Text ID="17706">
             <EN>Antique Landscaping</EN>
             <DE>Antike Landschaftsgestaltung</DE>
+            <KR>옛날식 조경</KR>
             <Icon>
               <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_6.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+    </Sources>
+    <MonumentEvents />
+    <MonumentThresholds />
+    <MonumentRewards />
+  </Asset>
+  <Asset ID="102466" Release="Release">
+    <Name>culture_1x1_secondground</Name>
+    <Text ID="102466">
+      <EN>Mosaic Paving</EN>
+      <DE>Mosaikpflaster</DE>
+      <KR>모자이크 포장 도로</KR>
+      <Icon>
+        <Filename>data/ui/2kimages/main/3dicons/ornaments/monument_01_1x1_05.png</Filename>
+      </Icon>
+    </Text>
+    <Rarity />
+    <ItemType />
+    <ItemSets />
+    <Allocation />
+    <EffectTargets />
+    <FactoryUpgrades />
+    <BuildingUpgrades />
+    <CultureUpgrades />
+    <ModuleOwnerUpgrades />
+    <ResidenceUpgrades />
+    <PopulationUpgrades />
+    <ElectricUpgrades />
+    <ExpeditionAttributes />
+    <AttackableUpgrades />
+    <TradeShipUpgrades />
+    <VehicleUpgrades />
+    <AttackerUpgrades />
+    <VisitorHarborUpgrades />
+    <RepairCraneUpgrades />
+    <IncidentInfectableUpgrades />
+    <IncidentInfluencerUpgrades />
+    <ItemGeneratorUpgrades />
+    <ItemActionUpgrades />
+    <ShipyardUpgrades />
+    <KontorUpgrades />
+    <TradePrice />
+    <Info ID="17731">
+      <EN>Step on art.</EN>
+      <DE>Kunst zum drauftreten.</DE>
+      <KR>예술품 위에 서 있는 느낌입니다.</KR>
+      <Icon />
+    </Info>
+    <Sources>
+      <Source ID="17700">
+        <Name>2 City Furnitures</Name>
+        <Text ID="17700">
+          <EN>City Furniture</EN>
+          <DE>Stadtverschönerungen</DE>
+          <KR>도시 비품</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17700">
+            <EN>City Furniture</EN>
+            <DE>Stadtverschönerungen</DE>
+            <KR>도시 비품</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_2.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17703">
+        <Name>3 Plaza Design</Name>
+        <Text ID="17703">
+          <EN>Plaza Design</EN>
+          <DE>Plaza-Designs</DE>
+          <KR>플라자 설계</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17703">
+            <EN>Plaza Design</EN>
+            <DE>Plaza-Designs</DE>
+            <KR>플라자 설계</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_3.png</Filename>
+            </Icon>
+          </Text>
+        </Details>
+      </Source>
+      <Source ID="17704">
+        <Name>4 Esplanade Design</Name>
+        <Text ID="17704">
+          <EN>Esplanade Design</EN>
+          <DE>Promenaden-Designs</DE>
+          <KR>산책로 설계</KR>
+          <Icon>
+            <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Filename>
+          </Icon>
+        </Text>
+        <Details>
+          <Text ID="17704">
+            <EN>Esplanade Design</EN>
+            <DE>Promenaden-Designs</DE>
+            <KR>산책로 설계</KR>
+            <Icon>
+              <Filename>data/ui/2kimages/main/3dicons/monument_event_rewards/icon_reward_4.png</Filename>
             </Icon>
           </Text>
         </Details>

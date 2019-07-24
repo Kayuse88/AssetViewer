@@ -14,6 +14,8 @@ namespace AssetViewer.Data {
         switch (App.Language) {
           case Languages.German:
             return "Anzahl Module";
+          case Languages.Korean:
+            return "모듈 수";
           default:
             return "Number of modules";
         }

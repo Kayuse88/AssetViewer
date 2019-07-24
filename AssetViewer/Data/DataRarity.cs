@@ -25,6 +25,20 @@ namespace AssetViewer.Data {
                 return "Gewöhnlich";
             }
             break;
+          case Languages.Korean:
+            switch (this.Element.XPathSelectElement("Values/Item/Rarity")?.Value) {
+              case "Uncommon":
+                return "특별";
+              case "Rare":
+                return "희귀";
+              case "Epic":
+                return "에픽";
+              case "Legendary":
+                return "전설r";
+              default:
+                return "일반";
+            }
+            break;
         }
         return this.Element.XPathSelectElement("Values/Item/Rarity")?.Value ?? "Common";
       }

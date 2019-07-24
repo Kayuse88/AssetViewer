@@ -4,11 +4,13 @@
     <Requirement ID="">
       <EN>0 Attractiveness</EN>
       <DE>0 Attraktivität</DE>
+      <KR>0 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11674">
       <EN>Ordinary, as in, a bachelor with a 'fine personality'.</EN>
       <DE>So außergewöhnlich, wie etwas Gewöhnliches eben sein kann.</DE>
+      <KR>"성실한" 총각 정도로 평범한 수준입니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -16,11 +18,13 @@
     <Requirement ID="">
       <EN>100 Attractiveness</EN>
       <DE>100 Attraktivität</DE>
+      <KR>100 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11675">
       <EN>A place at least one person doesn't absolutely hate.</EN>
       <DE>Ein Ort, den man nicht zwangsläufig hassen muss.</DE>
+      <KR>치를 떨며 싫어하지 않는 사람이 한 명은 있을 정도입니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -28,11 +32,13 @@
     <Requirement ID="">
       <EN>250 Attractiveness</EN>
       <DE>250 Attraktivität</DE>
+      <KR>250 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11676">
       <EN>Nice enough while still remaining deeply weird.</EN>
       <DE>Wirklich nett, wenn auch auf höchst sonderbare Art und Weise.</DE>
+      <KR>뭔가 이상하지만 나쁘지는 않습니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -40,11 +46,13 @@
     <Requirement ID="">
       <EN>450 Attractiveness</EN>
       <DE>450 Attraktivität</DE>
+      <KR>450 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11677">
       <EN>Peculiarity can be attractive.</EN>
       <DE>Eigentümlichkeit kann in manchen Fällen auch anziehend wirken.</DE>
+      <KR>특이한 매력이 있습니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -52,11 +60,13 @@
     <Requirement ID="">
       <EN>700 Attractiveness</EN>
       <DE>700 Attraktivität</DE>
+      <KR>700 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11679">
       <EN>Pleasant? Now we're getting somewhere.</EN>
       <DE>Gefällig kommt von Gefallen.</DE>
+      <KR>쾌적한 곳이라 앞으로 어떻게 발전할지 기대됩니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -64,11 +74,13 @@
     <Requirement ID="">
       <EN>1000 Attractiveness</EN>
       <DE>1000 Attraktivität</DE>
+      <KR>1000 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11681">
       <EN>As well-groomed and presented as a prize cow.</EN>
       <DE>Diese Modellstadt ist weniger attraktiv im herkömmlichen Sinne, besitzt aber eine gewisse Vorbildhaftigkeit.</DE>
+      <KR>우아하고 기품 넘치는 고급 견종을 보는 느낌입니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -76,11 +88,13 @@
     <Requirement ID="">
       <EN>1350 Attractiveness</EN>
       <DE>1350 Attraktivität</DE>
+      <KR>1350 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11684">
       <EN>Scenery that beckons like a siren's song.</EN>
       <DE>Eine Kulisse so anlockend wie der Gesang der Sirenen.</DE>
+      <KR>사이렌의 노래처럼 매혹적인 풍경을 자랑합니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -88,11 +102,13 @@
     <Requirement ID="">
       <EN>1750 Attractiveness</EN>
       <DE>1750 Attraktivität</DE>
+      <KR>1750 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11682">
       <EN>Something about this place stirs people up. Don't ask me what that means.</EN>
       <DE>Schönheit liegt manchmal im Auge des Betrachters, hier jedoch nicht.</DE>
+      <KR>정확하게 뭔지는 모르지만 이곳 분위기가 사람들을 들뜨게 합니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -100,11 +116,13 @@
     <Requirement ID="">
       <EN>2200 Attractiveness</EN>
       <DE>2200 Attraktivität</DE>
+      <KR>2200 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11688">
       <EN>As pretty as a postcard and redolent of all the fond memories you'd expect to follow.</EN>
       <DE>Wie eine hübsche Postkarte und voller Erinnerungen, denen man nur zu gerne nachhängt.</DE>
+      <KR>우편엽서에 그려진 그림처럼 향수를 불러오는 도시입니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -112,11 +130,13 @@
     <Requirement ID="">
       <EN>2700 Attractiveness</EN>
       <DE>2700 Attraktivität</DE>
+      <KR>2700 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11686">
       <EN>Pretty, like bright balloons, riverbanks and calligraphy.</EN>
       <DE>Amutig wie eine holde Maid, die am Flussufer ihr seidenes Haar kämmt.</DE>
+      <KR>거장의 수채화나 열대 휴양지에서 보는 일몰처럼 장관입니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -124,11 +144,13 @@
     <Requirement ID="">
       <EN>3250 Attractiveness</EN>
       <DE>3250 Attraktivität</DE>
+      <KR>3250 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11690">
       <EN>So wonderful, it has cheeky scamps skipping down the streets with dripping ices.</EN>
       <DE>Einfach wundervoll hier, all die frechen, kleinen Strolche, die mit bunten Ballons durch die Straßen hüpfen.</DE>
+      <KR>도시가 너무 멋져서 길거리에 있는 아이들까지도 귀공자로 보입니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -136,11 +158,13 @@
     <Requirement ID="">
       <EN>3850 Attractiveness</EN>
       <DE>3850 Attraktivität</DE>
+      <KR>3850 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11691">
       <EN>A very serious and grave kind of attractiveness that touches the soul.</EN>
       <DE>Die Art von Schönheit, die es vermag, die Seele zu berühren.</DE>
+      <KR>심금을 울리는 묵직한 매력이 영혼을 매만집니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -148,11 +172,13 @@
     <Requirement ID="">
       <EN>4500 Attractiveness</EN>
       <DE>4500 Attraktivität</DE>
+      <KR>4500 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11694">
       <EN>The kind of place you might expect dresses of the highest feasible circumference.</EN>
       <DE>Man ist wie geblendet von so viel Anmut und Schönheit.</DE>
+      <KR>밖에 나갈 때마다 제일 좋은 옷을 입어야 할 정도로 고급스러운 도시입니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -160,11 +186,13 @@
     <Requirement ID="">
       <EN>5200 Attractiveness</EN>
       <DE>5200 Attraktivität</DE>
+      <KR>5200 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11696">
       <EN>A flawless, ineffable beauty. Like moondust settled upon ice shards.</EN>
       <DE>Eine außerweltliche, unbeschreibliche Schönheit. Wie Mondstaub, der sich auf Eiszapfen abgelegt hat.</DE>
+      <KR>어디 하나 흠잡을 데 없는 완벽한 아름다움을 자랑하는 도시입니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -172,11 +200,13 @@
     <Requirement ID="">
       <EN>5950 Attractiveness</EN>
       <DE>5950 Attraktivität</DE>
+      <KR>5950 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11697">
       <EN>Sumptuous in its sprawl, elegant in its limbs, this city is one of glossy celebrity.</EN>
       <DE>Die ganze Welt blickt ehrfürchtig auf diesen makellosen Ort.</DE>
+      <KR>호화로움과 우아함의 극치를 보여주는 연예인 같은 도시입니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -184,11 +214,13 @@
     <Requirement ID="">
       <EN>6500 Attractiveness</EN>
       <DE>6500 Attraktivität</DE>
+      <KR>6500 매력도</KR>
       <Icon />
     </Requirement>
     <Text ID="11698">
       <EN>Notoriously, deliriously beautiful in the most ambitious conceivable way.</EN>
       <DE>Wären hier die Straßen aus Gold, würde es niemanden verwundern.</DE>
+      <KR>어떤 기준으로 평가하든 치명적인 매력과 미관을 자랑하는 도시입니다.</KR>
       <Icon />
     </Text>
   </Status>
@@ -196,6 +228,7 @@
     <Requirement ID="190650">
       <EN>Mme. Elise "The Nose" Bouquet</EN>
       <DE>Mme. Elise „die Nase“ Bouquet</DE>
+      <KR>더노즈' 부케 엘리제 부인</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_sommelier_824.png</Filename>
       </Icon>
@@ -205,6 +238,7 @@
     <Requirement ID="191145">
       <EN>New World Huaca Exhibition</EN>
       <DE>Ausstellung: Huaca in der Neuen Welt</DE>
+      <KR>신대륙 후아카 전시회</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/museum/icon_mummy_nazcan.png</Filename>
       </Icon>

@@ -29,6 +29,9 @@ namespace AssetViewer.Controls {
           case Languages.German:
             result = result.OrderBy(o => o.Text.DE);
             break;
+          case Languages.Korean:
+            result = result.OrderBy(o => o.Text.KR);
+            break;
           default:
             result = result.OrderBy(o => o.Text.EN);
             break;
@@ -41,6 +44,8 @@ namespace AssetViewer.Controls {
         switch (App.Language) {
           case Languages.German:
             return this.Assets.Select(s => new Tuple<String, String>(s.ID, $"{s.Text.DE} - {s.ID}")).OrderBy(o => o.Item2);
+          case Languages.Korean:
+            return this.Assets.Select(s => new Tuple<String, String>(s.ID, $"{s.Text.KR} - {s.ID}")).OrderBy(o => o.Item2);
           default:
             return this.Assets.Select(s => new Tuple<String, String>(s.ID, $"{s.Text.EN} - {s.ID}")).OrderBy(o => o.Item2);
         }
@@ -57,6 +62,15 @@ namespace AssetViewer.Controls {
               new Tuple<Progression, String>(Progression.LateMidGame, "Mittleres-Spätes Spiel"),
               new Tuple<Progression, String>(Progression.LateGame, "Spätes Spiel"),
               new Tuple<Progression, String>(Progression.EndGame, "Endspiel")
+            };
+          case Languages.Korean:
+            return new[] {
+              new Tuple<Progression, String>(Progression.EarlyGame, "게임 초반"),
+              new Tuple<Progression, String>(Progression.EarlyMidGame, "게임 초중반"),
+              new Tuple<Progression, String>(Progression.MidGame, "게임 중반"),
+              new Tuple<Progression, String>(Progression.LateMidGame, "게임 중후반"),
+              new Tuple<Progression, String>(Progression.LateGame, "게임 후반"),
+              new Tuple<Progression, String>(Progression.EndGame, "게임 막바지")
             };
           default:
             return new[] {

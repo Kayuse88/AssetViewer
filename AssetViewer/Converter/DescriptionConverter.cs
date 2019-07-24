@@ -20,6 +20,8 @@ namespace AssetViewer.Converter {
       switch (App.Language) {
         case AssetViewer.Library.Languages.German:
           return description.DE;
+        case AssetViewer.Library.Languages.Korean:
+          return description.KR;
         default:
           return description.EN;
       }

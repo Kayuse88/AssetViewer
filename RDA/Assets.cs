@@ -17,6 +17,7 @@ namespace RDA {
       // Descriptions
       DescriptionEN = XDocument.Load(Program.PathRoot + @"\Modified\Texts_English.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
       DescriptionDE = XDocument.Load(Program.PathRoot + @"\Modified\Texts_German.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
+      DescriptionKR = XDocument.Load(Program.PathRoot + @"\Modified\Texts_Korean.xml").Root.Elements().ToDictionary(k => k.Attribute("ID").Value, e => e.Value);
       SetTextDictionarys();
       SetIcons();
       SetTourismStati();
@@ -34,6 +35,7 @@ namespace RDA {
     internal static XDocument Original;
     internal static Dictionary<String, String> DescriptionEN;
     internal static Dictionary<String, String> DescriptionDE;
+    internal static Dictionary<String, String> DescriptionKR;
     internal static string Version = "Release";
     internal static Dictionary<string, XElement> TourismStati = new Dictionary<string, XElement>();
     internal static Dictionary<string, Asset> Buffs = new Dictionary<string, Asset>();

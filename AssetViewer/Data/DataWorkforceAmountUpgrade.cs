@@ -14,6 +14,8 @@ namespace AssetViewer.Data {
         switch (App.Language) {
           case Languages.German:
             return "Arbeitskräfte erforderlich";
+          case Languages.Korean:
+            return "노동력 요구";
           default:
             return "Workforce required";
         }

@@ -14,6 +14,8 @@ namespace AssetViewer.Data {
         switch (App.Language) {
           case Languages.German:
             return "Explosionswahrscheinlichkeit";
+          case Languages.Korean:
+            return "폭발 가능성";
           default:
             return "Explosion probability";
         }

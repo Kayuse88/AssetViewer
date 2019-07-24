@@ -62,6 +62,29 @@ namespace RDA {
         }
       }
     }
+    internal static void ExtractTextKorean(String path) {
+      var element = XDocument.Load(path).Root;
+      var result = new Dictionary<String, String>();
+      // assets
+      var values = element.XPathSelectElements("//Texts/Text");
+      foreach (var value in values) {
+        var id = value.XPathSelectElement("GUID").Value;
+        if (!result.ContainsKey(id)) {
+          var text = value.XPathSelectElement("Text")?.Value;
+          if (text != null) result.Add(id, text);
+        }
+      }
+      // finish
+      using (var xmlWriter = XmlWriter.Create($@"{Program.PathRoot}\Modified\Texts_Korean.xml", new XmlWriterSettings() { Indent = true })) {
+        xmlWriter.WriteStartElement("Texts");
+        foreach (var item in result) {
+          xmlWriter.WriteStartElement("Text");
+          xmlWriter.WriteAttributeString("ID", item.Key);
+          xmlWriter.WriteValue(item.Value);
+          xmlWriter.WriteEndElement();
+        }
+      }
+    }
     internal static void ExtractTemplateNames(String path) {
       var element = XDocument.Load(path).Root;
       var result = element.XPathSelectElements("//Asset/Template").Select(s => s.Value).Distinct().OrderBy(o => o);
@@ -214,18 +237,23 @@ namespace RDA {
       var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
       var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
       var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      var textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
       item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
       item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
       item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("KR"));
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Short", textKR));
       item.XPathSelectElement("Values/Text").Remove();
       // ornament
       var ornamentGuid = item.XPathSelectElement("Values/Ornament/OrnamentDescritpion").Value;
       textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={ornamentGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={ornamentGuid}]/Text").Value;
+      textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={ornamentGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Long", textKR));
       item.XPathSelectElement("Values/Ornament").Remove();
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
@@ -241,29 +269,37 @@ namespace RDA {
       var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
       var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
       var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      var textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
       item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
       item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
       item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("KR"));
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Short", textKR));
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
       textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
+      textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Long", textKR));
       item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
       // EffectTargets
       foreach (var effectTarget in item.XPathSelectElements("Values/ItemEffect/EffectTargets/Item")) {
         var effectTargetGuid = effectTarget.Element("GUID").Value;
         textEN = Assets.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={effectTargetGuid}]/../Text/LocaText/English/Text").Value;
         textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={effectTargetGuid}]/Text").Value;
+        textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={effectTargetGuid}]/Text").Value;
         effectTarget.Add(new XElement("Description"));
         effectTarget.XPathSelectElement("Description").Add(new XElement("EN"));
         effectTarget.XPathSelectElement("Description").Add(new XElement("DE"));
+        effectTarget.XPathSelectElement("Description").Add(new XElement("KR"));
         effectTarget.XPathSelectElement("Description/EN").Add(new XElement("Short", textEN));
         effectTarget.XPathSelectElement("Description/DE").Add(new XElement("Short", textDE));
+        effectTarget.XPathSelectElement("Description/KR").Add(new XElement("Short", textKR));
       }
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
@@ -279,18 +315,23 @@ namespace RDA {
       var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
       var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
       var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      var textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
       item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
       item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
       item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("KR"));
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Short", textKR));
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
       textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
+      textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Long", textKR));
       item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
       // ItemSet
 
@@ -308,29 +349,37 @@ namespace RDA {
       var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
       var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
       var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      var textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
       item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
       item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
       item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("KR"));
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Short", textKR));
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
       textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
+      textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Long", textKR));
       item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
       // EffectTargets
       foreach (var effectTarget in item.XPathSelectElements("Values/ItemEffect/EffectTargets/Item")) {
         var effectTargetGuid = effectTarget.Element("GUID").Value;
         textEN = Assets.Original.Root.XPathSelectElement($"//Asset/Values/Standard[GUID={effectTargetGuid}]/../Text/LocaText/English/Text").Value;
         textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={effectTargetGuid}]/Text").Value;
+        textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={effectTargetGuid}]/Text").Value;
         effectTarget.Add(new XElement("Description"));
         effectTarget.XPathSelectElement("Description").Add(new XElement("EN"));
         effectTarget.XPathSelectElement("Description").Add(new XElement("DE"));
+        effectTarget.XPathSelectElement("Description").Add(new XElement("KR"));
         effectTarget.XPathSelectElement("Description/EN").Add(new XElement("Short", textEN));
         effectTarget.XPathSelectElement("Description/DE").Add(new XElement("Short", textDE));
+        effectTarget.XPathSelectElement("Description/KR").Add(new XElement("Short", textKR));
       }
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
@@ -347,18 +396,23 @@ namespace RDA {
       var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
       var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
       var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      var textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
       item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
       item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
       item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("KR"));
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Short", textKR));
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
       textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
+      textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Long", textDE));
       item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));
@@ -375,18 +429,23 @@ namespace RDA {
       var itemGuid = item.XPathSelectElement("Values/Standard/GUID").Value;
       var textEN = item.XPathSelectElement("Values/Text/LocaText/English/Text").Value;
       var textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
+      var textKR = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={itemGuid}]/Text").Value;
       item.XPathSelectElement("Values/Standard").AddAfterSelf(new XElement("Description"));
       item.XPathSelectElement("Values/Description").Add(new XElement("EN"));
       item.XPathSelectElement("Values/Description").Add(new XElement("DE"));
+      item.XPathSelectElement("Values/Description").Add(new XElement("KR"));
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Short", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textDE));
+      item.XPathSelectElement("Values/Description/DE").Add(new XElement("Short", textKR));
       item.XPathSelectElement("Values/Text").Remove();
       // info
       var infoGuid = item.XPathSelectElement("Values/Standard/InfoDescription").Value;
       textEN = Assets.Original.Root.XPathSelectElement($"//Asset[Template='Text']/Values/Standard[GUID={infoGuid}]/../Text/LocaText/English/Text").Value;
       textDE = Program.TextDE.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
+      textKR = Program.TextKR.Root.XPathSelectElement($"Texts/Text[GUID={infoGuid}]/Text").Value;
       item.XPathSelectElement("Values/Description/EN").Add(new XElement("Long", textEN));
       item.XPathSelectElement("Values/Description/DE").Add(new XElement("Long", textDE));
+      item.XPathSelectElement("Values/Description/KR").Add(new XElement("Long", textKR));
       item.XPathSelectElement("Values/Standard/InfoDescription").Remove();
       // image
       Helper.SetImage(item.XPathSelectElement("Values/Standard/IconFilename"));

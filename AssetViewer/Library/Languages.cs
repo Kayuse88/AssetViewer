@@ -2,7 +2,8 @@
 
   public enum Languages {
     English,
-    German
+    German,
+    Korean
   }
 
 }

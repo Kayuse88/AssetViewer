@@ -15,6 +15,8 @@ namespace AssetViewer.Converter {
           return App.Descriptions[key].EN;
         case Languages.German:
           return App.Descriptions[key].DE;
+        case Languages.Korean:
+          return App.Descriptions[key].KR;
         default:
           throw new NotImplementedException();
       }

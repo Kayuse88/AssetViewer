@@ -14,6 +14,8 @@ namespace AssetViewer.Data {
         switch (App.Language) {
           case Languages.German:
             return "Liefert Elektrizität";
+          case Languages.Korean:
+            return "전기 제공";
           default:
             return "Provide Electricity";
         }

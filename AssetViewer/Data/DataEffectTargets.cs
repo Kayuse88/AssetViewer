@@ -20,6 +20,13 @@ namespace AssetViewer.Data {
               sbDE.Append(item.XPathSelectElement("Description/DE/Short").Value);
             }
             return sbDE.ToString();
+          case Languages.Korean:
+            var sbKR = new StringBuilder();
+            foreach (var item in effect.XPathSelectElements("Item")) {
+              sbKR.Append(sbKR.Length == 0 ? "영향 " : ", ");
+              sbKR.Append(item.XPathSelectElement("Description/KR/Short").Value);
+            }
+            return sbKR.ToString();
           default:
             var sbEN = new StringBuilder();
             foreach (var item in effect.XPathSelectElements("Item")) {

@@ -14,6 +14,8 @@ namespace AssetViewer.Data {
         switch (App.Language) {
           case Languages.German:
             return "Glaube";
+          case Languages.Korean:
+            return "신앙";
           default:
             return "Faith";
         }

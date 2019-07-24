@@ -70,6 +70,10 @@ namespace AssetViewer.Controls {
         case 1:
           App.Language = Languages.German;
           break;
+
+        case 2:
+          App.Language = Languages.Korean;
+          break;
       }
       ItemsHolder.RaiseLanguageChanged();
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));

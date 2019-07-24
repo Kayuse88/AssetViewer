@@ -36,7 +36,7 @@ namespace AssetViewer.Data.Filters {
     public ValueComparisons Comparison { get; set; }
     public virtual IEnumerable<T> ComparisonValues { get; }
     public T SelectedComparisonValue { get; set; }
-    public Description Description => new Description(App.Descriptions[DescriptionID].EN, App.Descriptions[DescriptionID].DE);
+    public Description Description => new Description(App.Descriptions[DescriptionID].EN, App.Descriptions[DescriptionID].DE, App.Descriptions[DescriptionID].KR);
     object IFilter.SelectedValue => SelectedValue;
     object IFilter.SelectedComparisonValue => SelectedComparisonValue;
     IEnumerable<T> IFilter<T>.CurrentValues => CurrentValues;

@@ -64,6 +64,8 @@ namespace RDA.Templates.Tourism {
 
     private string deField;
 
+    private string krField;
+
     private string idField;
 
     /// <remarks/>
@@ -83,6 +85,16 @@ namespace RDA.Templates.Tourism {
       }
       set {
         this.deField = value;
+      }
+    }
+
+    /// <remarks/>
+    public string KR {
+      get {
+        return this.krField;
+      }
+      set {
+        this.krField = value;
       }
     }
 
@@ -108,6 +120,8 @@ namespace RDA.Templates.Tourism {
 
     private string deField;
 
+    private string krField;
+
     private ushort idField;
 
     /// <remarks/>
@@ -127,6 +141,16 @@ namespace RDA.Templates.Tourism {
       }
       set {
         this.deField = value;
+      }
+    }
+
+    /// <remarks/>
+    public string KR {
+      get {
+        return this.krField;
+      }
+      set {
+        this.krField = value;
       }
     }
 

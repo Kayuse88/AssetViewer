@@ -22,6 +22,8 @@ namespace AssetViewer.Converter {
           return ((XElement)value).XPathSelectElement($"EN/{parameter}").Value;
         case Languages.German:
           return ((XElement)value).XPathSelectElement($"DE/{parameter}").Value;
+        case Languages.Korean:
+          return ((XElement)value).XPathSelectElement($"KR/{parameter}").Value;
         default:
           throw new NotImplementedException();
       }

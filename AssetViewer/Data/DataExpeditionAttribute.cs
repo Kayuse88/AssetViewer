@@ -14,6 +14,8 @@ namespace AssetViewer.Data {
         switch (App.Language) {
           case Languages.German:
             return "Expeditions-Bonus";
+          case Languages.Korean:
+            return "탐험 보너스";
           default:
             return "Expeditions bonus";
         }

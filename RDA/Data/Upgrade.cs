@@ -632,7 +632,7 @@ namespace RDA.Data {
         case "PerkDiver":
         case "PerkZoologist":
           value = null;
-          this.Text = Text.InsertBefore("Trait: ", "Merkmal: ");
+          this.Text = Text.InsertBefore("Trait: ", "Merkmal: ", "특성: ");
           break;
 
         case "PerkMilitaryShip":
@@ -643,7 +643,7 @@ namespace RDA.Data {
         case "PerkMale":
         case "PerkFemale":
           value = null;
-          this.Text = Text.InsertBefore("Trait: ", "Merkmal: ");
+          this.Text = Text.InsertBefore("Trait: ", "Merkmal: ", "특성: ");
           break;
 
         default:

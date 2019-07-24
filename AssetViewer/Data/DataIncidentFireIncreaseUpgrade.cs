@@ -14,6 +14,8 @@ namespace AssetViewer.Data {
         switch (App.Language) {
           case Languages.German:
             return "Brandgefahr";
+          case Languages.Korean:
+            return "화재 위험";
           default:
             return "Risk of fire";
         }

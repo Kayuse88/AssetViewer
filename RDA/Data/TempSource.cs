@@ -26,11 +26,14 @@ namespace RDA.Data {
       this.Name = Source.XPathSelectElement("Values/Standard/Name").Value;
       switch (Source.Element("Template").Value) {
         case "TourismFeature":
-          this.Text = new Description("Tourism", "Tourismus");
+          this.Text = new Description("Tourism", "Tourismus", "관광");
           foreach (var item in element.Details) {
             var cityStatus = item.Element("CityStatus");
             if (cityStatus != null) {
-              var desc = new Description((Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0") + " Attractiveness", (Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0") + " Attraktivität");
+              var desc = new Description(
+                (Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0") + " Attractiveness",
+                (Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0") + " Attraktivität",
+                (Assets.TourismStati[cityStatus.Value].Element("AttractivenessThreshold")?.Value ?? "0") + " 매력도");
               Details.Add(desc);
             }
             else if (item.Element("UnlockingSpecialist") != null) {
@@ -55,7 +58,7 @@ namespace RDA.Data {
           foreach (var item in element.Details) {
             // Detail points to Expedition
             if (item.Element("Template")?.Value == "Expedition") {
-              var desc = new Description("Expedition Abgeschossen", "Successfully Expedition");
+              var desc = new Description("Expedition Abgeschossen", "Successfully Expedition", "성공적인 탐험");
               this.Details.Add(desc);
               continue;
             }
@@ -72,11 +75,12 @@ namespace RDA.Data {
                   var desc = new Description(parent.XPathSelectElement("Values/Standard/GUID").Value);
                   desc.DE = $"{desc.DE} {path}";
                   desc.EN = $"{desc.EN} {path}";
+                  desc.KR = $"{desc.KR} {path}";
                   this.Details.Add(desc);
                   break;
 
                 case "Expedition":
-                  desc = new Description("Expedition Abgeschossen", " Successfully Expedition");
+                  desc = new Description("Expedition Abgeschossen", " Successfully Expedition", "성공적인 탐험");
                   this.Details.Add(desc);
                   break;
               }
@@ -93,26 +97,27 @@ namespace RDA.Data {
           this.Text = new Description(Source.XPathSelectElement("Values/Standard/GUID").Value);
           this.Text.EN = $"Harbour - {this.Text.EN}";
           this.Text.DE = $"Hafen - {this.Text.DE}";
+          this.Text.KR = $"항구 - {this.Text.KR}";
           foreach (var item in element.Details) {
             Description desc = null;
             switch (item.Element("Template").Value) {
               case "EarlyGame":
-                desc = new Description("Early Game", "Frühes Spiel");
+                desc = new Description("Early Game", "Frühes Spiel", "게임 초반");
                 break;
               case "EarlyMidGame":
-                desc = new Description("Early-Mid Game", "Frühes-Mittleres Spiel");
+                desc = new Description("Early-Mid Game", "Frühes-Mittleres Spiel", "게임 초중반");
                 break;
               case "MidGame":
-                desc = new Description("Mid Game", "Mittleres Spiel");
+                desc = new Description("Mid Game", "Mittleres Spiel", "게임 중반");
                 break;
               case "LateMidGame":
-                desc = new Description("Late-Mid Game", "Mittleres-Spätes Spiel");
+                desc = new Description("Late-Mid Game", "Mittleres-Spätes Spiel", "게임 중후반");
                 break;
               case "LateGame":
-                desc = new Description("Late Game", "Spätes Spiel");
+                desc = new Description("Late Game", "Spätes Spiel", "게임 후반");
                 break;
               case "EndGame":
-                desc = new Description("EndGame", "End Game");
+                desc = new Description("EndGame", "End Game", "게임 막바지");
                 break;
             }
             this.Details.Add(desc);
@@ -131,6 +136,7 @@ namespace RDA.Data {
           this.Text = new Description(Source.XPathSelectElement("Values/Quest/QuestGiver").Value);
           this.Text.EN = $"Quest - {this.Text.EN}";
           this.Text.DE = $"Quest - {this.Text.DE}";
+          this.Text.KR = $"퀘스트 - {this.Text.KR}";
           foreach (var item in element.Details) {
             // Todo: Fehlende Texte??
             try {
@@ -139,7 +145,7 @@ namespace RDA.Data {
             }
             catch (Exception e) {
 
-              var desc = new Description(item.XPathSelectElement("Values/Standard/Name").Value, item.XPathSelectElement("Values/Standard/Name").Value);
+              var desc = new Description(item.XPathSelectElement("Values/Standard/Name").Value, item.XPathSelectElement("Values/Standard/Name").Value, item.XPathSelectElement("Values/Standard/Name").Value);
               this.Details.Add(desc);
             }
           }
@@ -148,6 +154,7 @@ namespace RDA.Data {
           this.Text = new Description(element.Source.XPathSelectElement("Values/Standard/GUID").Value);
           this.Text.EN = $"Ship Drop - {this.Text.EN}";
           this.Text.DE = $"Schiff Drop - {this.Text.DE}";
+          this.Text.KR = $"표류물 - {this.Text.KR}";
           this.Details = element.Details.Select(d => new Description(d.XPathSelectElement("Values/Standard/GUID").Value)).ToList();
           break;
         default:

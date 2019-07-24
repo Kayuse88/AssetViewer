@@ -13,7 +13,7 @@ namespace AssetViewer.Data.Filters {
 
     public override Func<IQueryable<TemplateAsset>, IQueryable<TemplateAsset>> FilterFunc => result => {
       if (!String.IsNullOrEmpty(SelectedValue))
-        switch (values.FirstOrDefault(v => v.DE == SelectedValue || v.EN == SelectedValue).EN) {
+        switch (values.FirstOrDefault(v => v.DE == SelectedValue || v.EN == SelectedValue || v.KR == SelectedValue).EN) {
           case "Name":
             result = result.OrderBy(w => w.Text.CurrentLang);
             break;
@@ -51,10 +51,10 @@ namespace AssetViewer.Data.Filters {
     #region Fields
 
     private Description[] values = new[] {
-      new Description("Name", "Name"),
-      new Description("ID", "ID"),
-      new Description("Rarity", "Seltenheit"),
-      new Description("Selling Price", "Verkaufspreis")
+      new Description("Name", "Name", "이름"),
+      new Description("ID", "ID", "ID"),
+      new Description("Rarity", "Seltenheit", "희귀도"),
+      new Description("Selling Price", "Verkaufspreis", "판매 가격")
     };
 
     #endregion Fields

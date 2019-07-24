@@ -14,6 +14,8 @@ namespace AssetViewer.Data {
         switch (App.Language) {
           case Languages.German:
             return "Geschick";
+          case Languages.Korean:
+            return "제조";
           default:
             return "Crafting";
         }

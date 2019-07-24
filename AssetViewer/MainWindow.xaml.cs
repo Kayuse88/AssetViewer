@@ -26,6 +26,9 @@ namespace AssetViewer {
       if (App.Language == Languages.German) {
         ComboBoxLanguage.SelectedIndex = 1;
       }
+      else if (App.Language == Languages.Korean) {
+        ComboBoxLanguage.SelectedIndex = 2;
+      }
       ComboBoxLanguage.SelectionChanged += ComboBoxLanguage_OnSelectionChanged;
     }
 
@@ -75,6 +78,10 @@ namespace AssetViewer {
 
         case 1:
           App.Language = Languages.German;
+          break;
+
+        case 2:
+          App.Language = Languages.Korean;
           break;
       }
       this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Descriptions"));

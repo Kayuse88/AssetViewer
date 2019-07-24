@@ -5,6 +5,7 @@
     <Text ID="17006">
       <EN>Modest Architectural Exhibition</EN>
       <DE>Bescheidene Architekturausstellung</DE>
+      <KR>소형 건설박람회</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/icon_architecture.png</Filename>
       </Icon>
@@ -51,6 +52,7 @@
     <Text ID="17007">
       <EN>Large Architectural Exhibition</EN>
       <DE>Große Architekturausstellung</DE>
+      <KR>중형 건설박람회</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/icon_architecture.png</Filename>
       </Icon>
@@ -97,6 +99,7 @@
     <Text ID="17008">
       <EN>Sumptuous Architectural Exhibition</EN>
       <DE>Prächtige Architekturausstellung</DE>
+      <KR>대형 건설박람회</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/icon_architecture.png</Filename>
       </Icon>
@@ -143,6 +146,7 @@
     <Text ID="17009">
       <EN>Modest Science Exhibition</EN>
       <DE>Bescheidene Wissenschaftsausstellung</DE>
+      <KR>소형 과학 전시회</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/icon_science.png</Filename>
       </Icon>
@@ -189,6 +193,7 @@
     <Text ID="17010">
       <EN>Large Science Exhibition</EN>
       <DE>Große Wissenschaftsausstellung</DE>
+      <KR>중형 과학 전시회</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/icon_science.png</Filename>
       </Icon>
@@ -235,6 +240,7 @@
     <Text ID="17011">
       <EN>Sumptuous Science Exhibition</EN>
       <DE>Prächtige Wissenschaftsausstellung</DE>
+      <KR>대형 과학 전시회</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/icon_science.png</Filename>
       </Icon>
@@ -281,6 +287,7 @@
     <Text ID="17012">
       <EN>Modest Archaeological Exhibition</EN>
       <DE>Bescheidene archäologische Ausstellung</DE>
+      <KR>소형 고고학 전시회</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/icon_archeology.png</Filename>
       </Icon>
@@ -327,6 +334,7 @@
     <Text ID="17013">
       <EN>Large Archaeological Exhibition</EN>
       <DE>Große archäologische Ausstellung</DE>
+      <KR>중형 고고학 전시회</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/icon_archeology.png</Filename>
       </Icon>
@@ -373,6 +381,7 @@
     <Text ID="17014">
       <EN>Sumptuous Archaeological Exhibition</EN>
       <DE>Prächtige archäologische Ausstellung</DE>
+      <KR>대형 고고학 전시회</KR>
       <Icon>
         <Filename>data/ui/2kimages/main/3dicons/icon_archeology.png</Filename>
       </Icon>

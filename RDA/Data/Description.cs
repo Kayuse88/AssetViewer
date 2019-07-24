@@ -11,6 +11,7 @@ namespace RDA.Data {
     public String ID { get; set; }
     public String EN { get; set; }
     public String DE { get; set; }
+    public String KR { get; set; }
     public Icon Icon { get; set; }
     public DescriptionFontStyle FontStyle { get; set; }
     public Description AdditionalInformation { get; set; }
@@ -19,10 +20,11 @@ namespace RDA.Data {
 
     #region Constructors
 
-    public Description(String en, String de, Icon icon = null, Description AdditionalInformation = null, DescriptionFontStyle fontStyle = default) {
+    public Description(String en, String de, String kr, Icon icon = null, Description AdditionalInformation = null, DescriptionFontStyle fontStyle = default) {
       this.ID = String.Empty;
       this.EN = en;
       this.DE = de;
+      this.KR = kr;
       this.Icon = icon;
       this.AdditionalInformation = AdditionalInformation;
       this.FontStyle = fontStyle;
@@ -31,6 +33,7 @@ namespace RDA.Data {
       this.ID = id;
       this.EN = Assets.DescriptionEN[id];
       this.DE = Assets.DescriptionDE[id];
+      this.KR = Assets.DescriptionKR[id];
       if (Assets.Icons.ContainsKey(id)) {
         this.Icon = new Icon(Assets.Icons[id]);
       }
@@ -45,9 +48,10 @@ namespace RDA.Data {
       var item = Assets.DescriptionEN.First(w => w.Value.StartsWith(pattern));
       return new Description(item.Key);
     }
-    public Description InsertBefore(String en, String de) {
+    public Description InsertBefore(String en, String de, String kr) {
       this.EN = $"{en} {this.EN}";
       this.DE = $"{de} {this.DE}";
+      this.KR = $"{kr} {this.KR}";
       return this;
     }
     public XElement ToXml(String name) {
@@ -55,6 +59,7 @@ namespace RDA.Data {
       result.Add(new XAttribute("ID", this.ID));
       result.Add(new XElement("EN", this.EN));
       result.Add(new XElement("DE", this.DE));
+      result.Add(new XElement("KR", this.KR));
       result.Add(this.Icon == null ? new XElement("Icon") : this.Icon.ToXml());
       if (FontStyle != default) {
         result.Add(new XAttribute("FontStyle", (int)FontStyle));
@@ -70,7 +75,7 @@ namespace RDA.Data {
     }
 
     public bool Equals(Description other) {
-      return ID == other.ID && EN == other.EN && DE == other.DE && Icon == other.Icon;
+      return ID == other.ID && EN == other.EN && DE == other.DE && KR == other.KR && Icon == other.Icon;
     }
 
     #endregion Methods
